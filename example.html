@@ -1,369 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="example.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
-     crossorigin="anonymous">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-     <link rel="stylesheet" href="../vsproject/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="https://npmcdn.com/tootik@1.0.2/css/tootik.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css">
-</head>
-<body>
-	<div id="header" class="shadow">
-		<div id="intro" class="container wow fadeInDown">
-			<h1 class="text-center text-capitalize">Myngbaev Arsen</h1>
-			<h4 class="text-center text-capitalize">Web Designer</h4>
-		</div>
-	</div>
-	<section id="about" class="section">
-		<div class="container">
-			<div class="row">
-				<div class="col col-md-12">
-					<div id="profile" class="center-block wow zoomIn">
-						<img src="C:/xampp/htdocs/project/img/logos/logobull.png" width="170px" height="170px;">
-					</div>
-					<div id="intro-div" class="card content-wrapper wow fadeInUp">
-						<ul class="text-center list-inline">
-                        <li><a href="#0" target="_blank"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#0" target="_blank"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="#0" target="_blank"><i class="ion-social-linkedin"></i></a></li>
-                        <li><a href="#0" target="_blank"><i class="ion-social-googleplus"></i></a></li>
-                        <li><a href="#0" target="_blank"><i class="ion-social-instagram"></i></a></li>
-                    </ul>
-                    <p class="text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
-                        In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel sollicitudin. Vestibulum
-                        venenatis pharetra mi, ut vestibulum elit ultricies a. Vestibulum at mollis ex, ac consectetur
-                        massa. Donec nunc dui, laoreet a nibh et, semper tincidunt nunc. Donec ac posuere tellus.
-                        Pellentesque tempus suscipit velit sit amet bibendum.
-                    </p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
 
-	<section id="skills" class="section">
-    <h4 class="text-uppercase text-center">Skills</h4>
-    <div class="container">
-        <div class="row">
+    <title>Document</title>
 
-            <!-- Professional Skills -->
-            <div class="col col-md-4 col-sm-4 col-xs-12">
-                <div class="card content-wrapper skill-wrapper">
-                    <h5 class="text-center skill-title">Professional</h5>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>UI/UX Design<span>90%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="90%">
-                            <div class="determinate skill-determinate" style="width: 90%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+  </head>
 
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>PHP Web Application<span>80%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="80%">
-                            <div class="determinate skill-determinate" style="width: 80%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Android Development<span>70%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="70%">
-                            <div class="determinate skill-determinate" style="width: 70%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Adobe Design Tools<span>70%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="70%">
-                            <div class="determinate skill-determinate" style="width: 70%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Microsoft Office<span>80%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="80%">
-                            <div class="determinate skill-determinate" style="width: 80%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="assets/images/smaa.png" alt="" /></a>
             </div>
-
-            <!-- Personal Skills -->
-            <div class="col col-md-4 col-sm-4 col-xs-12">
-                <div class="card content-wrapper skill-wrapper">
-                    <h5 class="text-center skill-title">Personal</h5>
-
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Committed<span>100%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="100%">
-                            <div class="determinate skill-determinate" style="width: 100%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Punctual<span>90%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="90%">
-                            <div class="determinate skill-determinate" style="width: 90%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Leadership<span>80%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="80%">
-                            <div class="determinate skill-determinate" style="width: 80%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Communicative<span>70%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="70%">
-                            <div class="determinate skill-determinate" style="width: 70%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Analytical Skill<span>80%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="80%">
-                            <div class="determinate skill-determinate" style="width: 80%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="author-content">
+              <h4>Overlord</h4>
+              <span>Vector designer</span>
             </div>
-
-            <!-- Language Skills -->
-            <div class="col col-md-4 col-sm-4 col-xs-12">
-                <div class="card content-wrapper skill-wrapper">
-                    <h5 class="text-center skill-title">Language</h5>
-
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>English (Native)<span>100%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="100%">
-                            <div class="determinate skill-determinate" style="width: 100%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Spanish<span>90%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="90%">
-                            <div class="determinate skill-determinate" style="width: 90%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>French<span>80%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="80%">
-                            <div class="determinate skill-determinate" style="width: 80%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Arabic<span>70%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="70%">
-                            <div class="determinate skill-determinate" style="width: 70%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-progress-div">
-                        <!-- Add Skill -->
-                        <p>Hindi<span>60%</span></p>
-                        <!-- Edit Value Here -->
-                        <div class="progress skill-progress" data-percent="60%">
-                            <div class="determinate skill-determinate" style="width: 60%;">
-                                <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="#section1">About Me</a></li>
+                <li><a href="#section2">Hobbies</a></li>
+                <li><a href="#section3">My Work</a></li>
+                <li><a href="#section4">Contact Me</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-google"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </li>
+              </ul>
+            </div>
             </div>
         </div>
-    </div>
-</section>	
+      </div>
 
-<section id="interest" class="section">
-    <h4 class="text-uppercase text-center">Interest</h4>
-    <div class="container">
-        <div class="row">
-            <div class="col col-md-12 col-sm-12 col-xs-12">
-                <div class="card interest">
-                    <div class="row">
-                        <div class="col col-md-12 col-sm-12 col-xs-12">
-
-                            <!-- Some brief about your interest -->
-                            <p class="text-center">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis et tortor ac tincidunt.
-                                In euismod iaculis lobortis. Vestibulum posuere molestie ipsum vel sollicitudin.
-                                Vestibulum venenatis pharetrami. Lorem ipsum dolor sit amet.
-                            </p>
-                        </div>
-
-                        <!-- Interest Topic Icon and Name -->
-                        <ul class="col-md-12 col-sm-12 col-xs-12 text-center list-inline">
-                            <li class="interest-topic">
-                                <i class="ion-ios-film"></i>
-                                <span>Documentary</span>
-                            </li>
-                            <li class="interest-topic">
-                                <i class="ion-compose"></i>
-                                <span>Blogging</span>
-                            </li>
-                            <li class="interest-topic">
-                                <i class="ion-headphone"></i>
-                                <span>Music</span>
-                            </li>
-                            <li class="interest-topic">
-                                <i class="ion-ios-football"></i>
-                                <span>Football</span>
-                            </li>
-
-                            <li class="interest-topic">
-                                <i class="ion-plane"></i>
-                                <span>Traveling</span>
-                            </li>
-
-                            <li class="interest-topic">
-                                <i class="ion-ios-game-controller-b"></i>
-                                <span>Gaming</span>
-                            </li>
-                            <li class="interest-topic">
-                                <i class="ion-ios-camera"></i>
-                                <span>Photography</span>
-                            </li>
-                        </ul>
-                        <!-- ./Interest Topic Icon and Name -->
-                    </div>
+      <section class="section about-me" data-section="section1">
+        <div class="container">
+         
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/take.jpg" alt="" height="300px">
                 </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Take a rest before creating</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate rem sed a minus facilis cum doloremque nihil, aperiam at itaque quod expedita ut hic? Totam sequi aliquid officia exercitationem deleniti.
+                  </p>
+                  <div class="white-button">
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Prepare workspace</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis non ipsa minus culpa unde fugit accusamus maxime quod veniam illum ab aliquam ex, pariatur laudantium. Itaque, est. Laborum, voluptas esse.
+                  </p>
+                  <div class="white-button">
+                    <a href="#">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/right-image.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section class="section my-services" data-section="section2">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My Hobbies</h2>
+            <div class="line-dec"></div>
+            <span
+              >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum fuga dolore ducimus dignissimos ipsum quidem itaque necessitatibus tempora sed. Adipisci perferendis recusandae atque assumenda! Cum, doloribus veniam. Cupiditate, provident nostrum.</span
+            >
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="first-service-icon service-icon"></div>
+                <h4>Spend time for thinking</h4>
+                <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, iure nobis nisi quae blanditiis hic? Neque cupiditate commodi dolorum tempore minima quos repudiandae reprehenderit placeat aperiam beatae? Cum, eum repellendus.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="service-item">
+                <div class="fourth-service-icon service-icon"></div>
+                <h4>Analyse</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, architecto natus exercitationem cumque sunt possimus dolore voluptas officia sequi minima delectus debitis ullam incidunt, corporis cupiditate laborum excepturi accusamus voluptatem?
+                </p>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="section my-work" data-section="section3">
+        <div class="container">
+          <div class="section-heading">
+            <h2>My Work</h2>
+            <div class="line-dec"></div>
+            <span
+              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eius iusto consequatur blanditiis quasi? Rerum laboriosam distinctio asperiores dignissimos, consequuntur ad dolor minus recusandae placeat accusantium fugit aspernatur, nostrum quo!</span
+            >
+          </div>
+          <div class="row">
+            <div class="isotope-wrapper">
+              <form class="isotope-toolbar">
+                <label
+                  ><input
+                    type="radio"
+                    data-type="*"
+                    checked=""
+                    name="isotope-filter"
+                  />
+                  <span>all</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="people"
+                    name="isotope-filter"
+                  />
+                  <span>people</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="nature"
+                    name="isotope-filter"
+                  />
+                  <span>nature</span></label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    data-type="animals"
+                    name="isotope-filter"
+                  />
+                  <span>animals</span></label
+                >
+              </form>
+              <div class="isotope-box">
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/vector-portrait-600_thumb1200_4-3.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/vector-portrait-600_thumb1200_4-3.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Vector portrait</h4>
+                      
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/b84eae57f32862f8ca3c0e21bb833b08.png"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/b84eae57f32862f8ca3c0e21bb833b08.png"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Vector portrait</h4>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/affiche_l.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/affiche_l.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Vector animal</h4>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="people">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/kushal-gehlot-img-20191125-215515-666.jpg"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/kushal-gehlot-img-20191125-215515-666.jpg"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Vector portrait</h4>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="nature">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/ee0a47d7342f4ab1db5590793875d53c.png"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/ee0a47d7342f4ab1db5590793875d53c.png"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Vector nature</h4>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="isotope-item" data-type="animals">
+                  <figure class="snip1321">
+                    <img
+                      src="assets/images/low-poly-3305284_1280.webp"
+                      alt="sq-sample26"
+                    />
+                    <figcaption>
+                      <a
+                        href="assets/images/low-poly-3305284_1280.webp"
+                        data-lightbox="image-1"
+                        data-title="Caption"
+                        ><i class="fa fa-search"></i
+                      ></a>
+                      <h4>Vector animal</h4>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-me" data-section="section4">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Contact Me</h2>
+            <div class="line-dec"></div>
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id voluptatum corrupti quas qui sunt esse dolore quidem aut reiciendis optio iure similique laboriosam magnam nulla, omnis necessitatibus. Tenetur, aliquid officiis!</span
+            >
+          </div>
+          <div class="row">
+            <div class="right-content">
+              <div class="container">
+                <form id="contact" action="" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Your name..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="email"
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          placeholder="Your email..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input
+                          name="subject"
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Subject..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea
+                          name="message"
+                          rows="6"
+                          class="form-control"
+                          id="message"
+                          placeholder="Your message..."
+                          required=""
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Send Message
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-</section>
 
-<section id="contact" class="section">
-	<h4 class="text-uppercase text-center">Contact</h4>
-	<div class="container">
-		<div class="row">
-			<div class="col col-md-5 col-sm-6 col-xs-12">
-                <div class="info card">
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-                    <!-- Apply your own info here -->
-                    <ul class="text-center center-block aos-init" data-aos="fade" data-aos-delay="200" data-aos-offset="0">
-                        <li>
-                            <i class="ion-android-call center-block"></i>
-                            <span>+880 - 12345 - 67890</span>
-                        </li>
-                        <li>
-                            <i class="ion-ios-printer center-block"></i>
-                            <span>+880 - 12345 - 67890</span>
-                        </li>
-                        <li>
-                            <i class="ion-email center-block"></i>
-                            <span>emailid@domain.com</span>
-                        </li>
-                        <li>
-                            <i class="ion-earth center-block"></i>
-                            <span>websiteaddresslink.com</span>
-                        </li>
-                        <li>
-                            <i class="ion-ios-location center-block"></i>
-                            <span>25/A New Eskaton Road, Maghbazar</span>
-                        </li>
-                    </ul>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
 
-                </div>
-            </div>
-            <div class="col col-md-7 col-sm-6 col-xs-12">
-                <div class="contact card">
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
 
-                    <form id="contact-form" name="contact-form" role="form">
-                        <div class="input-field">
-                            <input id="name" name="name" type="text" class="validate" required="">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="input-field">
-                            <input id="subject" name="subject" type="text" class="validate" required="">
-                            <label for="subject">Subject</label>
-                        </div>
-                        <div class="input-field">
-                            <input id="email" name="email" type="email" class="validate" required="">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="input-field">
-                            <textarea id="textarea" name="message" class="materialize-textarea" required=""></textarea>
-                            <label for="textarea">Massage</label>
-                        </div>
-                        <div class="row">
-                            <div class="col col-md-12 col-sm-12 col-xs-12 text-center">
-                                <button type="submit" id="submit" name="submit-data" value="Submit" class="btn waves-effect waves-light btn-primary custom-btn">
-                                    <!-- Button value here -->
-                                    <i class="ion-ios-paperplane"></i>Send</button>
-                            </div>                            
-                        </div>
-                    </form>
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
 
-                </div>
-            </div>
-		</div>
-	</div>
-</section>
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
 
-	
-</body>
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
 </html>
